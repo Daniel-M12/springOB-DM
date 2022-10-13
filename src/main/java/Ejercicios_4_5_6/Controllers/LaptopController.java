@@ -41,9 +41,39 @@ public class LaptopController {
     }
 
     @PostMapping("/api/laptops")
-    public Laptop create(@RequestBody Laptop laptop){
-        return laptopRepository.save(laptop);
+    public ResponseEntity<Laptop> create(@RequestBody Laptop laptop){
+        if (laptop.getId() != null){
+            return ResponseEntity.ok(laptopRepository.save(laptop));
+        } else {
+         return ResponseEntity.badRequest().build();
+        }
     }
 
+    @PutMapping("api/laptops")
+    public ResponseEntity<Laptop> update(@RequestBody Laptop laptop){
+        if (laptop.getId() == null){
+            return ResponseEntity.badRequest().build();
+        }
+        if (laptopRepository.existsById(laptop.getId())){
+            return ResponseEntity.ok(laptopRepository.save(laptop));
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
 
+    @DeleteMapping("/api/laptops/{id}")
+    public ResponseEntity<Laptop> delete (@PathVariable Long id){
+        if (laptopRepository.existsById(id)){
+            laptopRepository.deleteById(id);
+            return ResponseEntity.noContent().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    @DeleteMapping("/api/laptops")
+    public ResponseEntity<Laptop> deleteAll(){
+        laptopRepository.deleteAll();
+        return ResponseEntity.noContent().build();
+    }
 }
