@@ -48,7 +48,7 @@ public class LaptopController {
     @PostMapping("/api/laptops")
     @ApiOperation("Método para ingresar una nueva laptop")
     public ResponseEntity<Laptop> create(@RequestBody Laptop laptop){
-        if (laptop.getId() != null){
+        if (laptop.getId() == null){
             return ResponseEntity.ok(laptopRepository.save(laptop));
         } else {
          return ResponseEntity.badRequest().build();
