@@ -1,7 +1,7 @@
-package Ejercicios_4_5_6.Controllers;
+package Ejercicios_Spring_OB.Controllers;
 
-import Ejercicios_4_5_6.Entities.Laptop;
-import Ejercicios_4_5_6.Repositories.LaptopRepository;
+import Ejercicios_Spring_OB.Entities.Laptop;
+import Ejercicios_Spring_OB.Repositories.LaptopRepository;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.http.ResponseEntity;

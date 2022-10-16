@@ -1,6 +1,6 @@
-package Ejercicios_4_5_6.Repositories;
+package Ejercicios_Spring_OB.Repositories;
 
-import Ejercicios_4_5_6.Entities.Laptop;
+import Ejercicios_Spring_OB.Entities.Laptop;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

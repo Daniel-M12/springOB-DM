@@ -1,8 +1,7 @@
-package Ejercicios_4_5_6.Controllers;
+package Ejercicios_Spring_OB.Controllers;
 
-import Ejercicios_4_5_6.Entities.Laptop;
+import Ejercicios_Spring_OB.Entities.Laptop;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

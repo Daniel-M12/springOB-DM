@@ -1,4 +1,4 @@
-package Ejercicios_4_5_6.Controllers;
+package Ejercicios_Spring_OB.Controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

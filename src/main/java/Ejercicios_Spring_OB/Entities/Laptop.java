@@ -1,4 +1,4 @@
-package Ejercicios_4_5_6.Entities;
+package Ejercicios_Spring_OB.Entities;
 
 import javax.persistence.*;
 

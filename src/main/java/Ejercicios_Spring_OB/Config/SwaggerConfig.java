@@ -1,4 +1,4 @@
-package Ejercicios_4_5_6.Config;
+package Ejercicios_Spring_OB.Config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

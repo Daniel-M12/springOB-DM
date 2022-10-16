@@ -11,7 +11,7 @@
 	<groupId>com.OB</groupId>
 	<artifactId>Ejercicios_4_5_6</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Ejercicios_4_5_6</name>
+	<name>Ejercicios_Spring_OB</name>
 	<description>Ejercicios de las sesiones 4,5 y 6 del curso Spring</description>
 	<properties>
 		<java.version>17</java.version>
